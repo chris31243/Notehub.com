@@ -1,0 +1,666 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.navWrapper {
+    width: 100%;
+    top: 0;
+    margin: 0 auto;
+    background-color: #005959;
+    position: fixed;
+    z-index: 950;
+}
+#title {
+    font-size: 50px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: whitesmoke;
+    overflow: hidden;
+    float: left;
+}
+#nav {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#otherLinks {
+    float: right;
+}
+#nav ul li {
+    float: right;
+}
+#nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#otherLinks a:hover {
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    background-color:#0ab3f4;
+}
+.mainContainer {
+    padding-top: 80px;
+    margin-top: 41px;
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    background-color: whitesmoke;
+}
+#logoutform {
+   
+    padding-right: 20%;
+}
+#logoutform form {
+    float: right;
+}
+#logoutform button {
+    z-index: 900;
+    position: fixed;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 16px;
+    border: none;
+    background-color: #0ab3f4;
+    margin-left: 10px;
+    border-radius: 3px;
+    padding: 4px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.profileLink {
+    float: right;
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+}
+.profileLink a {
+    text-decoration: none;
+}
+.footerWrapper {
+    width: 100%;
+    height: 100px;
+    background: -webkit-linear-gradient(whitesmoke, #cbe9ff);
+    background: -o-linear-gradient(whitesmoke, #cbe9ff);
+    background: -moz-linear-gradient(whitesmoke, #cbe9ff);
+    background: linear-gradient(whitesmoke, #cbe9ff);
+}
+.footerLinks {
+    text-align: center;
+    color: grey;
+    font-size: 80%;;
+}
+.footerLinks a {
+    color: #2e3831;
+    text-decoration: none;
+}
+.footerLinks a:visited {
+    text-decoration: none;
+    color: #2e3831;
+} 
+.copyright {
+    text-align:center;
+    color: grey;
+}
+.copyright a {
+    color: grey;
+    text-decoration: none;   
+}
+/*main.php css*/
+#fixtitle {
+    z-index: 950;
+    position:fixed;
+    display: block;
+}
+.links {
+    margin-top: 100px;
+    margin-bottom: 0px; 
+    padding: 10px;
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    display: block;
+}
+a {
+    color: black;
+}
+.active {
+    color: darkblue;
+}
+.links a {
+    display: block;
+    padding: 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+}
+hr {
+    border: none;
+    background-color:black;
+    height: 2px;
+    width: 220px;
+}
+.links a:hover {
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    background-color: lightseagreen;
+}
+.profileArea {
+    float: right;
+    position: relative;
+    margin-right: 220px;
+    margin-left: 0px;
+    margin-top: 100px;  
+    margin-bottom: 0px; 
+}
+.profileInfo { 
+    float: right;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    position: fixed;
+}
+.mainContent {
+    z-index: 100;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 297px;
+    border-radius: 30px;
+}
+.postareamain {
+    z-index: 100;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    width: 580px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 297px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.postareamain h1 {
+    display: inline-block;
+    border-bottom: 3px solid lightcoral;
+}
+.postareamain form {
+    border: none;
+}
+.userfeed {
+    z-index: 100;
+    overflow: auto;
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    width: 580px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 297px;
+    border-radius: 30px;
+    padding: 10px;
+    max-height: 1000px;
+}
+.friendfeed {
+    z-index: 100;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    width: 580px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 297px;
+    border-radius: 30px;
+    padding: 10px;
+    height: 500px;
+}
+.userfeed h1, .friendfeed h1 {
+    display: inline-block;
+    border-bottom: 3px solid darkcyan;
+}
+.userfeed h3, .friendfeed h3 {
+    font-size: 14px;
+    padding-left: 40px;
+}
+.userfeed h2, .friendfeed h2 {
+    font-size: 28px;
+    padding-left: 40px;
+}
+.feedpostarea {
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#userfeedshow form {
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    display: inline-block;
+}
+.postareamain form input {
+    background-color: #eee;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#bio {
+    background-color: #eee;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.postareamain form {
+    border: width border-style color;
+}
+.examLinks, .forumLink, .editProfile, .aboutLink {
+    padding: 0px 10px;
+    border-bottom: 3px solid black;
+}
+.examLinks h1 {
+    display: inline-block;
+    border-bottom: 4px solid #008000;
+}
+.examLinks h2, .forumLink h2, .editProfile h2, .aboutLink h2 {
+    text-align: center;
+    padding-left: 20px;
+    font-size: 30px;
+}
+#infotext {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 5px;
+}
+.examLinks a, .forumLink a, .editProfile a, .aboutLink a {
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.examLinks a:hover {
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    background-color: lightblue;
+}
+.forumLink a:hover {
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    background-color: darksalmon;
+}
+.editProfile a:hover {
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    background-color: blanchedalmond;
+}
+.aboutLink a:hover {
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    background-color: violet;
+}
+#linktoexams {
+    color: #ffa500;
+}
+#info, #close {
+    border: none;
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50px;
+}
+.examLinks, .forumLinks, .editProfile {
+    padding: 0px 10px;
+    border-bottom: 3px solid black;
+}
+.aboutLink {
+    padding: 0px 10px;
+    border: none;
+}
+.forumLink h1 {
+    display: inline-block;
+    border-bottom: 4px solid #0ab3f4;
+}
+.editProfile h1 {
+    display: inline-block;
+    border-bottom: 4px solid indianred;
+}
+.aboutLink h1 {
+    display: inline-block;
+    border-bottom: 4px solid lightgrey;
+}
+.forumLink h2, .aboutLink h2, .editProfile h2 {
+    text-align: center;
+}
+.forumLink a {
+    color: darkcyan;
+}
+.aboutLink a {
+    color: darkred;
+}
+.editProfile a {
+    color: lightcoral;
+}
+#forumbanner2, #editbanner2, #aboutbanner2, #exambanner2 {
+    overflow: hidden;
+    display: none;
+}
+#userfeedhide, #closemenu, #userfeedhide, #feedshow, #menushow {
+    display: none;
+}
+.buttons {
+    text-align: center;
+}
+.buttons button {
+    border: none;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*profile css*/
+.profileContainer {
+    padding-top: 80px;
+    margin-top: 41px;
+    width: 100%;
+    height: 1410px;
+    background-color: whitesmoke;
+}
+.profileEditContainer {
+    padding-top: 80px;
+    margin-top: 41px;
+    width: 100%;
+    height: 713px;
+    background-color: whitesmoke;
+}
+.profile1 {
+    z-index: 100;
+    width: 930px;
+    height: 610px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 297px;
+    border-radius: 30px;
+    display: block;
+    position: absolute;
+}
+.profile2 {
+    z-index: 100;
+    width: 930px;
+    height: 610px;
+    background-color: white;
+    margin-top: 750px;
+    margin-bottom: 0px;
+    margin-left: 297px;
+    border-radius: 30px;
+    display: block;
+    position: absolute;
+    overflow: auto;
+}
+#center {
+    text-align: center;
+    text-decoration: underline;
+}
+#profiletitle {
+    text-align: center;
+    text-decoration: underline;
+}
+.left {
+    padding-top: 30px;
+    float: left;
+    text-align: center;
+    width: 460px;
+}
+.left a {
+    font-size: 40px;
+    color: darkblue;
+    text-decoration: none;
+}
+.left a:hover {
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    color: darkcyan;
+}
+.left h1 {
+    text-decoration: underline;
+    font-size: 50px;
+}
+.right {
+    padding-top: 60px;
+    width: 460px;
+    float: right;
+    text-align: center;
+}
+.right img {
+    border-radius: 20px;
+}
+/*findpeople css*/
+.findpeopleContainer {
+    padding-top: 80px;
+    margin-top: 41px;
+    width: 100%;
+    height: 713px;
+    background-color: whitesmoke;
+}
+.findcontent {
+    width: 930px;
+    height: 610px;
+    overflow: auto;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 297px;
+    border-radius: 30px;
+    position: fixed;
+}
+.content form {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 4px solid black;
+    margin: 20px;
+}
+.content form input {
+    width: 300px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border:0px, 0px, 2px solid black, 0px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.content form button {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+.content form button:hover {
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    background-color: whitesmoke;
+}
+.results {
+    text-align: center;
+    padding: 40px;
+}
+.results img {
+    padding-top: 20px;
+}
+.results a {
+    font-size: 60px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.results a:hover {
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    font-size: 65px;
+}
+/*edit profile css*/
+.extraedit {
+    padding-top: 35px;
+    padding-left: 30px;
+    float: left;
+    text-align: center;
+    width: 300px;
+}
+.extraedit a {
+    font-size: 40px;
+    color: darkcyan;
+    text-decoration: none;
+}
+.extraedit a:hover {
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    color: darkblue;
+}
+.extraedit img {
+    border-radius: 25px;
+}
+.edit {
+    width: 550px;
+    float: right;
+}
+.edit form {
+    border: none;
+}
+.edit form input {
+    font-size: 20px;
+}
+#name, #age, #gender {
+    width: 110px;
+}
+#resizerage {
+    padding: 10px;
+}
+#gender, #nat, #rel {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+label {
+    font-size: 20px;
+}
+#gender {
+    width: 10px;
+}
+#bio {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*friend profile page css*/
+.follow, .back {
+    float: left;
+}
+.follow form, .back form {
+    border: none;
+}
+.follow form button {
+    text-align: center;
+    font-size: 60px;
+    margin-left: 90px;
+    border-radius: 20px;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.follow form button:hover {
+    background-color: lightgreen;
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    font-size: 65px;
+}
+.back form button {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 230px;
+    border-radius: 15px;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.feedpostarea {
+    padding: 5px;
+    width: auto;
+    height: auto;
+}
+/*about css*/
+.aboutContainer {
+    padding-top: 80px;
+    margin-top: 41px;
+    width: 100%;
+    height: auto;
+    min-height: 713px;
+    background-color: whitesmoke;
+}
+.aboutcontent {
+    padding: 20px;
+    z-index: 100;
+    width: 930px;
+    height: 570px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 297px;
+    border-radius: 30px;
+    display: block;
+    position: absolute;
+}
+.aboutcontent h1 {
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline;
+}
+.aboutcontent h2 {
+    font-size: 30px;
+    text-align: center;
+}
+.aboutcontent p {
+    text-align: center;
+    font-size: 18px;
+}

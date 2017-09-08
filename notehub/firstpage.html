@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notehub.com</title>
+        <meta charset="UTF-8">
+        <meta lang="en-UK">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/firstpage.css">
+        </head>
+    <body>  
+        <div class="navWrapper">
+            <header>
+                <nav>
+                    <a href="firstpage.html">notehub <i class="fa fa-file-text-o"></i></a>
+                </nav>
+                <div class="navLogin">
+                    <form action="includes/login.inc.php" method="POST">
+                        <input type="text" name="uid" placeholder="Email/Username">
+                        <input type="password" name="pwd" placeholder="Password">
+                        <button type="submit" name=submit>Log In</button><br>
+                        <span id="remember">Remember Me?<input id="remember" type="checkbox" name="remember"></span>
+                        <span id="forgot"><a href="forgot.php">Forgotten Your Password?</a></span>
+                    </form>
+                </div>
+            </header>
+        </div>
+        <div class="mainContainer">
+            <div class="info">
+                <div id="logoArea">
+                    <span id="logo">
+                        <h1>Welcome to Notehub <i class="fa fa-file-text-o"></i> </h1>
+                    </span>
+                </div>
+                <span id="title"><p><strong>Notehub is a website designed to help all students preparing for exams</strong></p></span>
+                <span id="info"><p> On notehub.com, you can share your notes with other students,<br>
+                    have your questions answered, vote on people's notes,<br>and download other student's notes 
+                    to help you get the grades you want!</p>
+                </span>
+            </div>
+            <div class="signup">
+                <h2>Sign Up Now!</h2>
+                <p>It's free and takes less than a minute!</p>
+                <form action="includes/signup.inc.php" method="POST">
+                    <input id="first" type="text" name="first" tabindex="1" placeholder="First name">
+                    <input id="last" type="text" name="last" tabindex="1" placeholder="Last name"><br>
+                    <input id="email" type="email" name="email" tabindex="1" placeholder="E-mail address"><br>
+                    <input id="username" type="text" name="uid" tabindex="1" placeholder="Username">
+                    <input id="password"type="password" name="pwd" tabindex="1" placeholder="Password"><br>
+                    <p id="check"><input type="checkbox" name="checkAgree" id="checkAgree">Tick this checkbox to confirm that you agree with our <a href="terms.html">terms and conditions</a><br>
+                    and that you have read our <a href="dataPolicy.html">data policy</a>, including our <a href="cookiePolicy.html">cooky policy</a>.</p>
+                    <button type="submit" name="submit">Sign up!</button>
+                </form>
+            </div>
+        </div>
+        <div class="footerWrapper">
+            <footer>
+                <div class="footerLinks">
+                    <a href="terms.html">Terms And Conditions</a> |
+                    <a href="dataPolicy.html">Data Policy</a> |
+                    <a href="cookyPolicy.html">Cooky Policy</a>
+                </div>
+                <div class="date">
+                    <p id="date" style="text-align:center; font-size:90%;"></p>
+                    <script>
+                        document.getElementById("date").innerHTML = Date();
+                    </script>
+                </div>  
+                <div class="copyright">
+                    <p> &copy; <a href="#">CDMCO 2017</a></p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

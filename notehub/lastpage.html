@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notehub.com</title>
+        <meta charset="UTF-8">
+        <meta lang="en-UK">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/firstpage.css">
+        </head>
+    <body>  
+        <div class="navWrapper">
+            <header>
+                <nav>
+                    <a href="firstpage.html">notehub <i class="fa fa-file-text-o"></i></a>
+                </nav>
+                <div class="navLogin">
+                    <form action="includes/login.inc.php" method="POST">
+                        <input type="text" name="uid" placeholder="Email/Username">
+                        <input type="password" name="pwd" placeholder="Password">
+                        <button type="submit" name=submit>Log In</button><br>
+                        <span id="remember">Remember Me?<input id="remember" type="checkbox" name="remember"></span>
+                        <span id="forgot"><a href="forgot.php">Forgotten Your Password?</a></span>
+                    </form>
+                </div>
+            </header>
+        </div>
+        <div class="mainContainer">
+            <div class="infoarea">
+                <div id="logoArea">
+                    <h1>Thank You For Visiting Notehub <i class="fa fa-file-text-o"></i> ! </h1>
+                </div>
+                <span id="title"><p><strong>Notehub is a website designed to help all students preparing for exams</strong></p></span>
+                <span id="info"><p> On notehub.com, you can share your notes with other students,<br>
+                    have your questions answered, vote on people's notes,<br>and download other student's notes 
+                    to help you get the grades you want!</p>
+                </span>
+                <div id="comeagain">
+                    <h1>Come Again Soon! </h1>
+                </div>
+            </div>
+        <div class="footerWrapper">
+            <footer>
+                <div class="footerLinks">
+                    <a href="terms.html">Terms And Conditions</a> |
+                    <a href="dataPolicy.html">Data Policy</a> |
+                    <a href="cookyPolicy.html">Cooky Policy</a>
+                </div>
+                <div class="date">
+                    <p id="date" style="text-align:center; font-size:90%;"></p>
+                    <script>
+                        document.getElementById("date").innerHTML = Date();
+                    </script>
+                </div>  
+                <div class="copyright">
+                    <p> &copy; <a href="#">CDMCO 2017</a></p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
